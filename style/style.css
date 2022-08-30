@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+
+body {
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+.header {
+    text-align: right;
+}
+
+.header h1 span {
+    color: #cf351e;
+}
+
+.topline {
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+.topline p {
+    padding: 0.2em;
+    padding-right: 0.7em;
+    margin: 0;
+}
+
+.toplink p {
+    display: inline-block;
+    width: 49.5%;
+}
+
+.toplink p:nth-child(1) {
+    text-align: left;
+}
+
+.toplink p:nth-child(2) {
+    text-align: right;
+}
+
+.part h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.part h2::first-letter {
+    font-size: 120%;
+}
+
+.part_content {
+    margin-left: 45px;
+}
+
+.part_content ul {
+    list-style-type: disc;
+}
+
+.part_content ul li ul li {
+    list-style-type: circle;
+}
+
+.exp_detail {
+    margin-left: 45px;
+}
+
+.exp_detail p:nth-child(1) {
+    font-weight: bold;
+}
+
+.important_word {
+    color: #cf351e;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+    .toplink p {
+        display: block;
+        width: 100%;
+    }
+
+    .toplink p:nth-child(2) {
+        text-align: left;
+    }
+
+
+    .part_content {
+        margin-left: 15px;
+    }
+
+    .exp_detail {
+        margin-left: 15px;
+    }
+}
