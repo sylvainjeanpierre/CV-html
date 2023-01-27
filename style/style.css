@@ -29,17 +29,11 @@ body {
     margin: 0;
 }
 
-.toplink p {
-    display: inline-block;
-    width: 49.5%;
-}
 
-.toplink p:nth-child(1) {
-    text-align: left;
-}
-
-.toplink p:nth-child(2) {
-    text-align: right;
+.toplink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .part h2 {
@@ -77,16 +71,6 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-    .toplink p {
-        display: block;
-        width: 100%;
-    }
-
-    .toplink p:nth-child(2) {
-        text-align: left;
-    }
-
-
     .part_content {
         margin-left: 15px;
     }
